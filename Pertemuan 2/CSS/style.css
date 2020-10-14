@@ -1,0 +1,25 @@
+.tb {
+    border-collapse: collapse;
+    margin-top: 10px;
+    width: 200px;
+}
+.tb td {
+   text-align: center; 
+}
+/* Pseudo-Class */
+h1:hover {
+    color: #222;
+    background: #ccc;
+    text-decoration: underline;
+}
+#kotak:active {
+    background-color: #f00;
+    font-size: 30px;
+}
+/* Pseudo-Element */
+.tb tr:nth-child(odd) {
+    background-color: #f00;
+}
+.tb tr:nth-child(even) {
+    background-color: #ff0;
+}
