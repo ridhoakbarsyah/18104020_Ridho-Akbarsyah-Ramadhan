@@ -1,0 +1,11 @@
+<form name="test" onsubmit="checkemail(this.test2.value); return false"> // digunakan untuk mengumpulkan inputan pengguna //
+	<input type="text" size="20" name="test2"> <input type="submit" value="submit"> //input yang akan dibuat //
+</form>
+<script type="text/javascript"> //menulis jenis script yg ditulis //
+	function checkemail(email) { // merupakan fungsi untuk mengecek email //
+		if (email.indexOf("@")!=-1 && email.indexOf (".")!=-1) 
+			alert("Apakah Alamat Email Sudah Benar?") // pesan yg diambil jika email yang dimasukkan benar //
+		else
+			alert("Penulisan Email Salah!") // pesan jika email yg di masukkan salah //
+	}
+</script> 
