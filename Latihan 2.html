@@ -1,0 +1,25 @@
+<!DOCTYPE html><!---untuk menentukan tipe dokumen-->
+<html><!--membuat halaman pada dokumen Latihan jQuery 2-->
+    <head><!--membuat informasi pada halaman latihan jQuery 2-->
+        <meta charset="UTF-8"><!--untuk membuat metadata utf-8 pada dokumen-->
+        <title>Latihan jQuery 2</title><!--untuk membuat judul Latihan jQuery 2--->
+    </head><!---untuk mengakhiri pada halaman jQuery 2-->
+    <body><!--sebagai tempat membuat konten pada html-->
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat non minus, 
+        obcaecati est porro iste impedit dolore maiores quae, molestias consequatur fugiat! 
+        Deserunt, inventore obcaecati perferendis modi architecto sint!</p><!--untuk membuat paragraf pada halaman Latihan jQuery2-->
+        <button id="hide">Hide</button><!--sebagai tombol hide pada halaman Latihan jQuery2-->
+        <button id="show">Show</button><!--sebagai tombol show pada halaman Latihan jQuery2-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--untuk membuat link pada script-->
+        <script>
+            $('#hide').on('click', function(){
+                $('p').hide();
+            });
+            $('#show').on('click', function(){
+                $('p').show();
+            });
+        </script><!--untuk membuatr tombol onclick pada hide dan membuat tombol onclick pada show di Latihan jQuery 2-->
+    </body><!--untuk mengakhiri konten Latihan jQuery 2 pada halaman html-->
+</html><!--untuk mengakhiri informasi pada halaman Latihan jQuery 2-->

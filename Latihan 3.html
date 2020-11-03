@@ -1,0 +1,27 @@
+<!DOCTYPE html><!---untuk menentukan tipe dokumen-->
+<html><!--membuat halaman pada dokumen Latihan jQuery 3-->
+    <head><!--membuat informasi pada halaman latihan jQuery 3-->
+        <meta charset="UTF-8"><!--untuk membuat metadata utf-8 pada dokumen-->
+        <title>Latihan jQuery 3</title><!--untuk membuat judul pada latihan jQuery 3-->
+    </head><!---untuk mengakhiri pada halaman jQuery 3-->
+    <body><!--sebagai tempat membuat konten pada html-->
+        <label for="bil1">Bil1</label><!--untuk membuat label bilangan 1 pada halaman-->
+        <input type="number" name="bil1" id="bil1"><!--untuk menginput nomor pada bilangan 1-->
+
+        <label for="bil2">Bil2</label><!--untuk membuat label bilangan 2 pada halaman-->
+        <input type="number" name="bil2" id="bil2"><!--untuk menginput nomor pada bilangan 2-->
+        
+        <input type="button" value="Tambah" id="btnTambah"><!--untuk menginput button tambah pada halaman-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--untuk membuat link pada halaman-->
+        <script>
+            $('#btnTambah').on('click', function(){
+                let bil1 = $('#bil1').val();
+                let bil2 = $('#bil2').val();
+                let hasil = parseInt(bil1) + parseInt(bil2);
+                alert('Hasil : ' + hasil);
+            });
+        </script><!--untuk membuat onclick pada bilangan 1,bilangan 2, kemudian membuat pertambahan dari perseInt 
+                supaya bisa mendapatkan hasil pada pertambahan tersebut-->
+    </body><!--untuk mengakhiri konten Latihan jQuery 3 pada halaman html-->
+</html><!--untuk mengakhiri informasi pada halaman Latihan jQuery 3-->
