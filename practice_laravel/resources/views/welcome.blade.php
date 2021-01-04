@@ -19,32 +19,37 @@
                 height: 100vh;
                 margin: 0;
             }
-
-            .full-height {
+            /* height untuk mengatur tinggi */
+            .full-height { 
                 height: 100vh;
             }
-
+            /* display flex layout yang dipake */
             .flex-center {
                 align-items: center;
                 display: flex;
+                /* justify-content dan align-item untuk mengatur dua properti CSS yang membantu kita mendistribusikan item-item di dalam container.  */
                 justify-content: center;
             }
 
             .position-ref {
+            /* position relatif untuk elemen diposisikan relatif terhadap posisi normal */
                 position: relative;
             }
 
             .top-right {
+            /* position absolute merupakan unsur diposisikan relatif terhadap posisi pertama */
                 position: absolute;
                 right: 10px;
                 top: 18px;
             }
 
             .content {
+                /* text-align center untuk text rata tengah pada content */
                 text-align: center;
             }
 
             .title {
+                /* font-size untuk ukuran font title */
                 font-size: 84px;
             }
 
@@ -78,7 +83,7 @@
                     @endauth
                 </div>
             @endif
-
+<!-- div untuk wadah suatu content  -->
             <div class="content">
                 <div class="title m-b-md"> <!-- menampilkan title pada halaman awal pada website -->
                     Ridho Akbarsyah Ramadhan
