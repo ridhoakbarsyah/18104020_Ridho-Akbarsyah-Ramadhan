@@ -1,5 +1,6 @@
 @extends('template.base')
 @section('content')
+<h1>DataTable</h1>
 <div class="row">
     <div class="col-lg-12">
         @if (session()->has('pesan'))
@@ -13,7 +14,7 @@
         <div class="table-responsive">
             <table class="table table-hover">
                 <tr>
-                    <th>#</th>
+                    <th>No</th>
                     <th>NIM</th>
                     <th>Name</th>
                     <th>Gender</th>
@@ -24,6 +25,7 @@
                 @forelse ($student as $mahasiswa)
                 <tr>
                     <!-- loop iteration untuk menyesuaikan jumlah data -->
+                    
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $mahasiswa->nim }}</td>
                     <td>{{ $mahasiswa->name }}</td>
@@ -44,8 +46,7 @@
                             <!-- menggunakan route student.edit dimana id tertentu yang terpilih -->
                         <a href="{{ route('student.create') }}" class="btn btn-primary mb-2">Tambah</a>
                         <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
-                        <div class="table-responsive">
-                            <table class="table table-hover">
+                        
                         </form>
                     </td>
                 </tr>
